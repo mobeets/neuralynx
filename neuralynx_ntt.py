@@ -26,6 +26,8 @@ def mmap_ntt_file(f, offset=NTT_HEADER_SIZE):
     """
     Read the post-header content of the Neuralynx .ntt file via memory-mapping
         n.b. Neuralynx writes little endian
+
+    Source: http://nedlom.blogspot.com/2013/02/how-to-read-neuralynx-ntt-files-with.html
     """
     ntt_dtype = np.dtype([ 
         ('timestamp'  , '<u8'), 
@@ -44,6 +46,8 @@ def read_ntt(filename, offset=NTT_HEADER_SIZE):
     - header lines before params
     - params, a dict
     - spikes as (num_spikes, length_waveform, num_channels) array
+
+    Help via: https://github.com/bwillers/nlxio/blob/master/__init__.py
     """
     params = {}
     pre_lines = []
