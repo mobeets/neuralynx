@@ -3,6 +3,10 @@ neuralynx
 
 reads and writes neuralynx tetrode files (.ntt)
 
+### Requirements
+
+* numpy
+
 ### Example .ntt header
 
     ######## Neuralynx Data File Header
