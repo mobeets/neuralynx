@@ -5,7 +5,7 @@ reads and writes neuralynx tetrode files (.ntt)
 
 ### Requirements
 
-* numpy
+* [numpy](http://www.scipy.org/scipylib/download.html) `pip install numpy`
 
 ### Example .ntt header
 
