@@ -24,4 +24,4 @@ reads and writes neuralynx tetrode files (.ntt)
         -AlignmentPt    8
         -ThreshVal  60  60  60  60
         
-n.b. This header is always 2^14 bytes long. It is padded with \x00 before the data that follows in order to reach this size.
+n.b. This header is always `2^14` bytes long. It is padded with `\x00`s at the end in order to reach this size.
